@@ -3239,7 +3239,7 @@ main div a {
     
     #panel .sou-panel .sou-sou div {
         margin-bottom: 30px;
-        width: 180px;
+        width: 130px;
         margin: 5px auto 20px;
     }
     
@@ -3479,7 +3479,7 @@ main div a {
             padding: 3px;
             border:1px solid gray;
             border-radius: 5px;
-            font-size: 0.5rem;
+            font-size: 0.7rem;
         }
         footer #sosofo  .fo2 .list1-fo2 form textarea {
             margin: 0 10px;
