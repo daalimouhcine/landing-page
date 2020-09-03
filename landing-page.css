@@ -1,0 +1,3572 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(7, 23, 71);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image:url(images/body.png)
+}
+
+
+        /*----- start header -----*/
+
+.header {
+    position: fixed;
+    top:0;
+    left:0;
+    padding:0px 100px 0px;
+    background: #53afda;
+    width:100%;
+    box-sizing:border-box;
+    z-index: 7;
+}
+
+.header .logo {
+    height: 50px;
+    line-height: 50px;
+    float:left;
+    padding: 0;
+    margin: 0 -70px;
+}
+
+.header .logo img {
+    width: 150px;
+    height: 70px;
+}
+
+.header .logo b {
+    font-family: serif;
+    font-weight: bold;
+    letter-spacing:0.3rem;
+    color: goldenrod;
+
+}
+
+.header nav {
+    float:right;
+}
+.header nav ul {
+    margin:0;
+    padding:10px 0;
+    display:flex;
+}
+
+.header nav ul li {
+    list-style-type: none;
+}
+
+.header nav ul li a {
+    height:50px;
+    line-height:50px;
+    padding:0 20px;
+    text-decoration:none;
+    display:block;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.header nav ul li a i {
+
+    padding:0 10px;
+
+}
+.header nav ul li a:hover ,.header nav ul li a:active {
+    color:#fff ;
+    background-color:#2196f3;
+}
+.menu-toggle {
+    color:rgb(6, 18, 83);
+    float:right;
+    line-height:50px;
+    font-size:24px;
+    cursor:pointer;
+    display:none ;
+}
+
+
+
+
+
+        /*----- end header -----*/
+
+
+        /*-----start main -----*/
+
+main {
+    height: 80vh;
+    width: 100%;
+    background-image:linear-gradient(120deg ,rgba(53, 70, 221, 0.726),rgba(57, 93, 255, 0.596)),url(images/main.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 65px;
+}
+
+main div {  
+    height: 100%;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+main div h1 {
+    font-size: 3.5rem;
+    color: rgb(230, 228, 228);
+}
+
+main div p {
+    font-size: 2.5rem;
+    color:rgb(221, 221, 221);
+}
+
+main div h1 span {
+    text-decoration: line-through;
+}
+
+main div a {
+    min-height: 60px;
+    min-width: 270px;
+    justify-self: center;
+    background-color: rgb(226, 33, 162);
+    color: rgb(243, 231, 231);
+    font-size: 1.2rem;
+    font-weight:bold;
+    border-radius: 100px;
+    margin: 20px auto ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+main div a:hover {
+    background-color:rgb(255, 74, 240);
+}
+
+
+
+        /*-----end main -----*/
+
+
+        /*----- start pricing -----*/
+
+#pricing {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#pricing h2 {
+    align-self:center;
+    margin: 30px 0;
+    font-size: 2.5em;
+    color: rgb(0, 0, 114);
+}
+
+#pricing #id {
+    display:flex;
+    flex-direction:row;
+    width: 100%;
+    justify-content: space-between;
+}
+#pricing #id #sou-id1  {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    width: 60%;
+}
+#pricing #id #sou-id2 {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    width: 60%;
+    margin-left: -50px;
+}
+
+#pricing section {
+    width: 275px;
+    height: 699px;
+    background-color: rgb(245, 245, 245);
+    margin: 60px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow:0px 0px 10px 0px gray;
+}
+
+#pricing section:hover {
+    transform:scale(1.05);
+    transition:all linear 0.5s;
+    box-shadow:0px 0px 20px 1px gray;
+    z-index: 0;
+}
+
+#pricing section header {
+    text-align: center;
+    width: 100%;
+    height:80px;
+    padding: 29px 0;
+    text-align: center;
+}
+
+#pricing section header h4 {
+    font-size: 1.3rem;
+    color:rgb(31, 0, 172);
+}
+
+#pricing section header p {
+    font-size: 1.1rem;
+    padding: 10px 25px;
+    color:rgb(88, 51, 255);
+}
+
+#pricing section .taman {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pricing section .taman .save .ofr {
+    background-color: transparent;
+    color: rgb(122, 121, 121);
+    text-decoration: line-through;
+    display:inline-block;
+}
+
+#pricing section .taman .save span{
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    padding: 10px;
+}
+
+#pricing section .taman .pric {
+    color: rgb(8, 0, 124);
+    margin: 10px 0 0;
+    font-size: 3rem;
+    font-weight:bold;
+}
+
+#pricing section .taman .pric sub, #pricing section .taman .pric sup {
+    margin: 100px 0 0;
+    font-size: 1.5rem;
+}
+
+
+#pricing section .list {
+    line-height: 1.8rem;
+    margin: 30px 0px 10px 10px;
+}
+
+#pricing section .list li i {
+    font-size: 0.8rem;
+    margin-right: 3px;
+}
+
+#pricing section .list .yellow i {
+    color: rgb(212, 212, 0);
+}
+#pricing section .list .green i {
+    color: green;
+}
+#pricing section .list .special b {
+    background-color: rgba(222, 176, 255, 0.781);
+    display: inline-block;
+    border-radius: 100px;
+    padding: 5px 15px;
+}
+#pricing section .list .special i {
+    color: purple;
+}
+
+#pricing section .add {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 35px;
+    margin-top: auto;
+}
+
+#pricing section .add button {
+    background-color:rgb(63, 55, 170);
+    color: rgb(209, 243, 209);
+    font-size: 1.2rem;
+    width: 80%;
+    border:1px solid rgb(64, 64, 235);
+    border-radius: 100px;
+    padding: 10px;
+    margin-top: 10px;
+}
+#pricing section .add button:hover , #pricing section .add button:active {
+    background-color:rgb(11, 1, 151);
+}
+
+#pricing section .add b {
+    color: rgb(151, 150, 150);
+}
+
+#pricing #business {
+    transform:scale(1.05);
+    transition:all linear 0.5s;
+    box-shadow:0px 0px 20px 1px gray;
+    z-index: 0;
+}
+
+#pricing #business #popular {
+    background-color: crimson;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 0 0 10px 0px crimson;
+    color:wheat;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#pricing #business .taman .save span{
+    background-color: crimson;
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    padding: 10px;
+
+}
+
+#pricing #business .taman .save .ofr {
+    background-color: transparent;
+    color: rgb(122, 121, 121);
+    text-decoration: line-through;
+    display:inline-block;
+}
+
+#pricing #business .add button {
+    background-color: rgb(252, 78, 113);
+    border:1px solid rgb(252, 95, 126);
+    color: rgb(209, 243, 209);
+    font-size: 1.2rem;
+    width: 80%;
+    border-radius: 100px;
+    padding: 10px;
+    margin-top: 10px;
+}
+#pricing #business .add button:hover ,#pricing #business .add button:active {
+    background-color: crimson;
+}
+
+
+        /*----- end pricing -----*/
+
+
+
+        /*----- start video -----*/
+
+#works {
+    background-color: rgb(198, 207, 230);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+#works h2 {
+    margin-bottom:20px ;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    font-size: 2.5rem;
+    font-family:'Courier New', Courier, monospace
+}
+
+#works #video {
+    width: 50%;
+}
+
+
+        /*----- end video -----*/
+
+
+        /*----- start domain name ----*/
+
+
+#domain {
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    height:300px;
+    width: 100%;
+    margin-top: 70px;
+}
+
+#domain div {
+    text-align: center;
+    width: 850px;
+}
+
+#domain div h3 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+#domain div p {
+    font-size: 1.22rem;
+    margin: 10px 0;
+}
+
+#domain div form {
+    margin-top: 50px;
+}
+
+#domain div form input {
+    height: 50px;
+    width: 650px;
+    font-size: 1.3rem;
+    border-radius:100px;
+    padding: 20px;
+    border: 1px solid gray;
+}
+
+#domain div form button {
+    background-color:rgb(10, 1, 146);
+    color: rgb(198, 206, 250);
+    height:50px ;
+    width: 150px;
+    font-size: 1.3rem;
+    border-radius: 100px;
+    margin-left: -50px;
+}
+
+
+        /*----- end domain name -----*/
+
+
+        /*----- start featurs -----*/
+
+
+#featurs {
+    background-color: rgba(255, 255, 255, 0.836);
+    display: flex;
+    flex-direction:column;
+    margin: 70px 0;
+}
+
+#featurs .fea1 {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 60px;
+}
+
+#featurs .fea1 div {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#featurs .fea1 div .fea-p {
+    font-size: 1.3rem;
+    color: rgb(134, 129, 129);
+}
+
+#featurs .fea1 div h4 {
+    font-size: 2.3rem;
+    font-weight:bold;
+    margin: 20px 0;
+    color:rgb(0, 0, 138);
+}
+
+#featurs .fea1 div p {
+    font-size: 1.15rem;
+    font-weight:bold;
+    color: rgb(90, 90, 90);
+}
+
+#featurs .fea1 div a {
+    text-decoration:underline;
+    color: rgb(55, 55, 102);
+    display: inline-block;
+    margin: 20px 0;
+
+}
+
+#featurs .fea1 img {
+
+}
+
+
+
+
+        /*----- end featurs -----*/
+
+
+        /*----- start panel -----*/
+
+
+#panel {
+    background-color: rgba(255, 255, 255, 0.623);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#panel header {
+    margin: 40px 0 50px;
+}
+
+#panel header h3 {
+    font-size: 2.7rem;
+    color:rgb(3, 3, 139);
+}
+
+#panel .sou-panel {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content:space-between ;
+}
+
+#panel .sou-panel div img{
+    border-radius: 50px;
+    margin:0 0 40px 0;
+}
+
+#panel .sou-panel .sou-sou {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#panel .sou-panel .sou-sou div {
+    margin-bottom: 30px;
+    width: 300px;
+    margin: 5px auto 20px;
+}
+
+#panel .sou-panel .sou-sou i {
+    font-size: 2.5rem;
+    color:rgb(0, 0, 138);
+    margin: 15px 0;
+}
+
+#panel .sou-panel .sou-sou h4 {
+    font-size: 1.5rem;
+    color:rgb(0, 0, 138);
+}
+
+#panel .sou-panel .sou-sou p {
+    font-size: 1.1rem;
+}
+
+
+        
+        /*----- start panel -----*/
+
+
+        /*----- start guarantee -----*/
+
+
+#guarantee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    text-align: center ;
+}
+
+#guarantee h3 {
+    margin: 10px;
+    font-size: 2.9rem;
+    color: rgb(0, 0, 94);
+}
+
+#guarantee p {
+    font-size: 1.1rem;
+    font-weight:bold;
+    color: rgb(0, 0, 94);
+    width: 540px;
+}
+
+#guarantee form {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+#guarantee form input[type="email"] {
+    text-align: center;
+    border:1px solid gray;
+    border-radius: 5px;
+    height: 40px;
+    width: 400px;
+    margin: 30px 0 10px;
+}
+
+#guarantee form input[type="submit"] {
+    background-color:rgb(56, 56, 184);
+    color:rgb(240, 234, 253);
+    text-align: center;
+    border:1px solid gray;
+    border-radius: 100px;
+    height: 50px;
+    width: 240px;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight:bold;
+    cursor: pointer;
+}
+#guarantee form input[type="submit"]:hover {
+    background-color:rgb(17, 17, 172);
+
+}
+
+
+
+
+        /*----- end guarantee -----*/
+
+
+        /*----- start footer -----*/
+
+
+footer {
+    background-color: rgba(216, 216, 216, 0.486);
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    height: 500px;
+    margin-top: 70px;
+}
+
+footer .fo1 {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+}
+
+footer .fo1 p {
+    align-self: flex-end;
+    color: rgb(29, 19, 114);
+}
+
+footer .fo1 .lo-fo {
+    display:flex;
+    flex-direction:row;
+    margin: 20px 40px
+}
+
+footer .fo1 .lo-fo img {
+    height: 100%;
+    width: 30%;
+}
+
+footer .fo1 .lo-fo p {
+    align-self: flex-end;
+    padding:0 5px;
+    font-weight: bold;
+    font-family: serif;
+    letter-spacing: 0.15rem;
+    font-size:1.1rem; 
+    color: rgb(255, 220, 21);
+}
+
+footer .fo1 .pa-fo {
+    margin:0 40px;
+}
+
+footer .fo1 .pa-fo p {
+    color: rgb(29, 19, 114);
+}
+
+footer .fo1 .pa-fo p i {
+    color: rgb(29, 19, 114);
+    font-size: 1rem;
+    margin:0 8px;
+}
+
+footer .fo1 .list1-fo1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px 40px
+}
+
+footer .fo1 .list1-fo1 a {
+    color: rgb(29, 19, 114);
+    font-size: 1.9rem;
+    padding: 10px;
+}
+
+footer .fo1 .list2-fo1 {
+    margin: 10px 40px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+footer .fo1 .list2-fo1 img {
+    margin: 2px;
+}
+
+footer .fo1 .list2-fo1 a {
+    text-decoration:underline;
+    align-self: center;
+    margin: 5px;
+}
+
+
+footer hr {
+    margin:0 10px;
+}
+
+footer #sosofo {
+    display:flex;
+    flex-direction:row;
+}
+
+
+footer .fo2 {
+    width: 35%;
+    margin: 0 20px;
+}
+
+footer .fo2 .list1-fo2 form {
+    display: flex;
+    flex-direction:column;
+}
+
+footer .fo2 .list1-fo2 header {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    font-size: 1.5rem;
+    width:100% ;
+    margin:20px 0;
+}
+
+footer .fo2 .list1-fo2 header h3{
+    color: rgb(29, 19, 114);
+}
+
+footer .fo2 .list1-fo2 form input {
+    margin: 10px 30px;
+    height:30px ;
+    width:70% ;
+    padding: 3px;
+    border:1px solid gray;
+    border-radius: 5px;
+}
+footer .fo2 .list1-fo2 form textarea {
+    margin: 0 30px;
+    height:90px ;
+    width:80% ;
+    padding: 10px;
+    border:1px solid gray;
+    border-radius: 5px;
+}
+
+footer .fo2 .list1-fo2 form #submit {
+    margin: 10px 30px;
+    height:30px ;
+    width:60% ;
+    padding: 3px;
+    border:1px solid gray;
+    border-radius: 8px;
+    align-self: center;
+    font-weight: bold;
+    background-color: rgb(25, 25, 190);
+    color:rgb(233, 230, 225);
+    cursor: pointer;
+}
+
+
+
+footer .fo3 {
+    display: flex;
+    flex-direction: row;
+    width: 650px;
+}
+
+footer .fo3 .sou-li1 {
+    margin: 20px;
+}
+
+footer .fo3 .sou-li1 h5 {
+    color: rgb(4, 4, 133);
+    font-size: 1.5rem;
+    margin: 10px 0px;
+}
+footer .fo3 .sou-li1 ul {
+    line-height: 1.7rem;
+    color: rgb(66, 80, 107);
+}
+
+
+footer .fo3 .sou-li2 {
+    margin: 20px;
+}
+
+footer .fo3 .sou-li2 h5 {
+    color: rgb(4, 4, 133);
+    font-size: 1.5rem;
+    margin: 10px 0px;
+}
+footer .fo3 .sou-li2 ul {
+    line-height: 1.7rem;
+    color: rgb(66, 80, 107);
+}
+
+
+footer .fo3 .sou-li3 {
+    margin: 20px;
+}
+
+footer .fo3 .sou-li3 h5 {
+    color: rgb(4, 4, 133);
+    font-size: 1.5rem;
+    margin: 10px 0px;
+}
+footer .fo3 .sou-li3 ul {
+    line-height: 1.7rem;
+    color: rgb(66, 80, 107);
+}
+
+
+        /*----- end footer -----*/
+
+
+
+
+
+
+
+
+
+
+
+
+        @media (max-width:1250px) {
+
+        /*----- start header -----*/
+
+
+
+
+
+
+        /*----- end header -----*/
+
+
+
+        
+
+        /*----- start pricing -----*/
+
+#pricing {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#pricing h2 {
+    align-self:center;
+    margin: 30px 0;
+    font-size: 2.5em;
+    color: rgb(0, 0, 114);
+}
+
+#pricing #id {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width: 100%;
+    justify-content: space-between;
+}
+#pricing #id #sou-id1  {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    width: 65%;
+}
+#pricing #id #sou-id2 {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    width: 65%;
+    margin-left: 0px;
+}
+
+#pricing section {
+    width: 400px;
+    height: 699px;
+    background-color: rgb(245, 245, 245);
+    margin: 60px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow:0px 0px 10px 0px gray;
+}
+
+#pricing section:hover {
+    transform:scale(1.05);
+    transition:all linear 0.5s;
+    box-shadow:0px 0px 20px 1px gray;
+    z-index: 0;
+}
+
+#pricing section header {
+    text-align: center;
+    width: 100%;
+    height:80px;
+    padding: 29px 0;
+    text-align: center;
+}
+
+#pricing section header h4 {
+    font-size: 1.3rem;
+    color:rgb(31, 0, 172);
+}
+
+#pricing section header p {
+    font-size: 1.1rem;
+    padding: 10px 25px;
+    color:rgb(88, 51, 255);
+}
+
+#pricing section .taman {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pricing section .taman .save .ofr {
+    background-color: transparent;
+    color: rgb(122, 121, 121);
+    text-decoration: line-through;
+    display:inline-block;
+}
+
+#pricing section .taman .save span{
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    padding: 10px;
+}
+
+#pricing section .taman .pric {
+    color: rgb(8, 0, 124);
+    margin: 10px 0 0;
+    font-size: 3rem;
+    font-weight:bold;
+}
+
+#pricing section .taman .pric sub, #pricing section .taman .pric sup {
+    margin: 100px 0 0;
+    font-size: 1.5rem;
+}
+
+
+#pricing section .list {
+    line-height: 1.8rem;
+    margin: 30px 0px 10px 10px;
+}
+
+#pricing section .list li i {
+    font-size: 0.8rem;
+    margin-right: 3px;
+}
+
+#pricing section .list .yellow i {
+    color: rgb(212, 212, 0);
+}
+#pricing section .list .green i {
+    color: green;
+}
+#pricing section .list .special b {
+    background-color: rgba(222, 176, 255, 0.781);
+    display: inline-block;
+    border-radius: 100px;
+    padding: 5px 15px;
+}
+#pricing section .list .special i {
+    color: purple;
+}
+
+#pricing section .add {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 35px;
+    margin-top: auto;
+}
+
+#pricing section .add button {
+    background-color:rgb(63, 55, 170);
+    color: rgb(209, 243, 209);
+    font-size: 1.2rem;
+    width: 80%;
+    border:1px solid rgb(64, 64, 235);
+    border-radius: 100px;
+    padding: 10px;
+    margin-top: 10px;
+}
+#pricing section .add button:hover , #pricing section .add button:active {
+    background-color:rgb(11, 1, 151);
+}
+
+#pricing section .add b {
+    color: rgb(151, 150, 150);
+}
+
+#pricing #business {
+    transform:scale(1.05);
+    transition:all linear 0.5s;
+    box-shadow:0px 0px 20px 1px gray;
+    z-index: 0;
+}
+
+#pricing #business #popular {
+    background-color: crimson;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 0 0 10px 0px crimson;
+    color:wheat;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#pricing #business .taman .save span{
+    background-color: crimson;
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    padding: 10px;
+
+}
+
+#pricing #business .taman .save .ofr {
+    background-color: transparent;
+    color: rgb(122, 121, 121);
+    text-decoration: line-through;
+    display:inline-block;
+}
+
+#pricing #business .add button {
+    background-color: rgb(252, 78, 113);
+    border:1px solid rgb(252, 95, 126);
+    color: rgb(209, 243, 209);
+    font-size: 1.2rem;
+    width: 80%;
+    border-radius: 100px;
+    padding: 10px;
+    margin-top: 10px;
+}
+#pricing #business .add button:hover ,#pricing #business .add button:active {
+    background-color: crimson;
+}
+
+
+        /*----- end pricing -----*/
+
+
+
+
+        }
+
+
+
+
+
+        @media (max-width:1100px) {
+
+
+        /*----- start header -----*/
+
+.header {
+    padding:0px 15px;
+    background: #7ac8ec;
+}
+
+.header nav {
+    position:absolute;
+    width:100%;
+    height:calc(100vh - 70px);
+    background: #7ac8ec;
+    top:70px;
+    left:100%;
+    transition:0.5s;
+}
+
+.header .logo {
+    margin:0;
+}
+
+.header .logo img {
+    height:60px ;
+    width:110px ;
+}
+
+header nav.active {
+    left: 0;
+}
+
+.header nav ul {
+    display: block;
+    text-align: center;
+}
+
+.header nav ul li a {
+    border-bottom:1px solid rgba(0,0,0,.2);
+}
+
+.menu-toggle {
+    display: block;
+    margin:10px;
+}
+
+        /*----- end header -----*/
+
+
+        
+        /*-----start main -----*/
+
+
+main div h1 {
+    font-size: 3rem;
+    color: rgb(230, 228, 228);
+}
+
+main div p {
+    font-size: 1.9rem;
+    color:rgb(221, 221, 221);
+}
+
+
+
+
+
+
+
+        /*-----end main -----*/
+
+
+        /*----- start domain name ----*/
+
+
+        #domain {
+            display: flex;
+            flex-direction:column;
+            align-items:center;
+            height:300px;
+            width: 100%;
+            margin-top: 70px;
+        }
+        
+        #domain div {
+            text-align: center;
+            width: 620px;
+        }
+        
+        #domain div h3 {
+            font-size: 2.2rem;
+            margin: 20px 0;
+        }
+        
+        #domain div p {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+        
+        #domain div form {
+            margin-top: 50px;
+        }
+        
+        #domain div form input {
+            height: 30px;
+            width: 400px;
+            font-size: 1.2rem;
+            border-radius:100px;
+            padding: 20px;
+            border: 1px solid gray;
+        }
+        
+        #domain div form button {
+            background-color:rgb(10, 1, 146);
+            color: rgb(198, 206, 250);
+            height:43px ;
+            width: 130px;
+            font-size: 1.15rem;
+            border-radius: 100px;
+            margin-left: -60px;
+        }
+        
+        
+                /*----- end domain name -----*/
+        
+        
+
+        
+
+        /*----- start featurs -----*/
+
+
+#featurs {
+    background-color: rgba(255, 255, 255, 0.836);
+    display: flex;
+    flex-direction:column;
+    margin: 70px 0;
+}
+
+#featurs .fea1 {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 20px;
+}
+
+#featurs .fea1 div {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#featurs .fea1 div .fea-p {
+    font-size: 1.3rem;
+    color: rgb(134, 129, 129);
+}
+
+#featurs .fea1 div h4 {
+    font-size: 2.3rem;
+    font-weight:bold;
+    margin: 20px 0;
+    color:rgb(0, 0, 138);
+}
+
+#featurs .fea1 div p {
+    font-size: 1.15rem;
+    font-weight:bold;
+    color: rgb(90, 90, 90);
+}
+
+#featurs .fea1 div a {
+    text-decoration:underline;
+    color: rgb(55, 55, 102);
+    display: inline-block;
+    margin: 20px 0;
+
+}
+
+#featurs .fea1 img {
+    width: 50%;
+}
+
+
+
+
+        /*----- end featurs -----*/
+
+
+
+        
+        /*----- start panel -----*/
+
+
+#panel .sou-sou {
+    font-size:1.4rem
+}
+
+#panel .sou-panel div img{
+    height: 90%;
+    width: 90%;
+    border-radius: 50px;
+    margin:0 0 40px 0;
+}
+
+
+
+
+#panel {
+    background-color: rgba(255, 255, 255, 0.623);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#panel header {
+    margin: 40px 0 50px;
+}
+
+#panel header h3 {
+    font-size: 2.7rem;
+    color:rgb(3, 3, 139);
+}
+
+#panel .sou-panel {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content:space-between ;
+}
+
+#panel .sou-panel div img{
+    border-radius: 50px;
+    margin:0 0 40px 0;
+}
+
+#panel .sou-panel .sou-sou {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#panel .sou-panel .sou-sou div {
+    margin-bottom: 30px;
+    width: 300px;
+    margin: 5px auto 20px;
+}
+
+#panel .sou-panel .sou-sou i {
+    font-size: 2rem;
+    color:rgb(0, 0, 138);
+    margin: 15px 0;
+}
+
+#panel .sou-panel .sou-sou h4 {
+    font-size: 1.3rem;
+    color:rgb(0, 0, 138);
+}
+
+#panel .sou-panel .sou-sou p {
+    font-size: 1rem;
+}
+
+
+        
+        /*----- end panel -----*/
+
+
+
+        
+        
+        /*----- start footer -----*/
+
+
+footer {
+    background-color: rgba(216, 216, 216, 0.486);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 500px;
+    margin-top: 70px;
+}
+
+footer .fo1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+footer #sosofo {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .fo1 p {
+    color: rgb(29, 19, 114);
+    font-size: 1.1rem;
+}
+
+footer .fo1 .lo-fo {
+    display:flex;
+    flex-direction:row;
+    margin: 20px 40px;
+}
+
+footer .fo1 .lo-fo img {
+    height: 100%;
+    width: 17%;
+}
+
+footer .fo1 .lo-fo p {
+    align-self: flex-end;
+    padding:0 5px;
+    font-weight: bold;
+    font-family: serif;
+    letter-spacing: 0.15rem;
+    font-size:1.3rem; 
+    color: rgb(255, 220, 21);
+}
+
+footer .fo1 .pa-fo {
+    margin:0 40px;
+}
+
+footer .fo1 .pa-fo p {
+    color: rgb(29, 19, 114);
+    font-size: 1.2rem;
+}
+
+footer .fo1 .pa-fo p i {
+    color: rgb(29, 19, 114);
+    font-size: 1rem;
+    margin:0 8px;
+}
+
+footer .fo1 .list1-fo1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px 40px
+}
+
+footer .fo1 .list1-fo1 a {
+    color: rgb(29, 19, 114);
+    font-size: 1.9rem;
+    padding: 10px;
+}
+
+footer .fo1 .list2-fo1 {
+    margin: 10px 40px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+footer .fo1 .list2-fo1 img {
+    margin: 2px;
+}
+
+footer .fo1 .list2-fo1 a {
+    text-decoration:underline;
+    align-self: center;
+    margin: 5px;
+}
+
+
+footer hr {
+    margin:0 5px;
+}
+
+
+footer #sosofo  .fo2 {
+    width: 25%;
+    margin: 0 20px;
+}
+
+footer #sosofo  .fo2 .list1-fo2 form {
+    display: flex;
+    flex-direction:column;
+}
+
+footer #sosofo  .fo2 .list1-fo2 header {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    font-size: 1.3rem;
+    width:100% ;
+    margin:20px 0;
+}
+
+footer #sosofo  .fo2 .list1-fo2 header h3{
+    color: rgb(29, 19, 114);
+}
+
+footer #sosofo  .fo2 .list1-fo2 form input {
+    margin: 10px 10px;
+    height:30px ;
+    width:70% ;
+    padding: 3px;
+    border:1px solid gray;
+    border-radius: 5px;
+}
+footer #sosofo  .fo2 .list1-fo2 form textarea {
+    margin: 0 10px;
+    height:90px ;
+    width:80% ;
+    padding: 10px;
+    border:1px solid gray;
+    border-radius: 5px;
+}
+
+footer #sosofo  .fo2 .list1-fo2 form #submit {
+    margin: 10px 30px;
+    height:30px ;
+    width:60% ;
+    padding: 3px;
+    border:1px solid gray;
+    border-radius: 8px;
+    align-self: center;
+    font-weight: bold;
+    background-color: rgb(25, 25, 190);
+    color:rgb(233, 230, 225);
+    cursor: pointer;
+}
+
+
+
+footer #sosofo  .fo3 {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 650px;
+}
+
+footer #sosofo  .fo3 .sou-li1 {
+    margin: 15px 5px;
+}
+
+footer #sosofo  .fo3 .sou-li1 h5 {
+    color: rgb(4, 4, 133);
+    font-size: 1.3rem;
+    margin: 10px 0px;
+}
+footer #sosofo  .fo3 .sou-li1 ul {
+    line-height: 1.7rem;
+    color: rgb(66, 80, 107);
+}
+
+
+footer #sosofo  .fo3 .sou-li2 {
+    margin: 15px 5px;
+}
+
+footer #sosofo  .fo3 .sou-li2 h5 {
+    color: rgb(4, 4, 133);
+    font-size: 1.3rem;
+    margin: 10px 0px;
+}
+footer #sosofo  .fo3 .sou-li2 ul {
+    line-height: 1.7rem;
+    color: rgb(66, 80, 107);
+}
+
+
+footer #sosofo  .fo3 .sou-li3 {
+    margin: 15px 5px;
+}
+
+footer #sosofo  .fo3 .sou-li3 h5 {
+    color: rgb(4, 4, 133);
+    font-size: 1.3rem;
+    margin: 10px 0px;
+}
+footer #sosofo  .fo3 .sou-li3 ul {
+    line-height: 1.7rem;
+    color: rgb(66, 80, 107);
+}
+
+
+        /*----- end footer -----*/
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+        @media (max-width:950px) {
+
+
+            /*----- start header -----*/
+    
+    .header {
+        padding:0px 15px;
+        background: #7ac8ec;
+    }
+    
+    .header nav {
+        position:absolute;
+        width:100%;
+        height:calc(100vh - 70px);
+        background: #7ac8ec;
+        top:70px;
+        left:100%;
+        transition:0.5s;
+    }
+    
+    .header .logo {
+        margin:0;
+    }
+    
+    .header .logo img {
+        height:60px ;
+        width:110px ;
+    }
+    
+    header nav.active {
+        left: 0;
+    }
+    
+    .header nav ul {
+        display: block;
+        text-align: center;
+    }
+    
+    .header nav ul li a {
+        border-bottom:1px solid rgba(0,0,0,.2);
+    }
+    
+    .menu-toggle {
+        display: block;
+        margin:10px;
+    }
+    
+            /*----- end header -----*/
+    
+    
+            
+            /*-----start main -----*/
+    
+    
+    main div h1 {
+        font-size: 2.5rem;
+        color: rgb(230, 228, 228);
+    }
+    
+    main div p {
+        font-size: 1.4rem;
+        color:rgb(221, 221, 221);
+    }
+    
+    
+    
+    
+    
+    
+    
+            /*-----end main -----*/
+    
+
+
+            
+
+        
+
+        /*----- start pricing -----*/
+
+#pricing {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#pricing h2 {
+    align-self:center;
+    margin: 30px 0;
+    font-size: 2.5em;
+    color: rgb(0, 0, 114);
+}
+
+#pricing #id {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width: 100%;
+    justify-content: space-between;
+}
+#pricing #id #sou-id1  {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    width: 89%;
+}
+#pricing #id #sou-id2 {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    width: 89%;
+    margin-left: 0px;
+}
+
+#pricing section {
+    width: 700px;
+    height: 699px;
+    background-color: rgb(245, 245, 245);
+    margin: 60px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow:0px 0px 10px 0px gray;
+}
+
+#pricing section:hover {
+    transform:scale(1.05);
+    transition:all linear 0.5s;
+    box-shadow:0px 0px 20px 1px gray;
+    z-index: 0;
+}
+
+#pricing section header {
+    text-align: center;
+    width: 100%;
+    height:80px;
+    padding: 29px 0;
+    text-align: center;
+}
+
+#pricing section header h4 {
+    font-size: 1.3rem;
+    color:rgb(31, 0, 172);
+}
+
+#pricing section header p {
+    font-size: 1.1rem;
+    padding: 10px 25px;
+    color:rgb(88, 51, 255);
+}
+
+#pricing section .taman {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pricing section .taman .save .ofr {
+    background-color: transparent;
+    color: rgb(122, 121, 121);
+    text-decoration: line-through;
+    display:inline-block;
+}
+
+#pricing section .taman .save span{
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    padding: 10px;
+}
+
+#pricing section .taman .pric {
+    color: rgb(8, 0, 124);
+    margin: 10px 0 0;
+    font-size: 3rem;
+    font-weight:bold;
+}
+
+#pricing section .taman .pric sub, #pricing section .taman .pric sup {
+    margin: 100px 0 0;
+    font-size: 1.5rem;
+}
+
+
+#pricing section .list {
+    line-height: 1.8rem;
+    margin: 30px 0px 10px 10px;
+}
+
+#pricing section .list li i {
+    font-size: 0.8rem;
+    margin-right: 3px;
+}
+
+#pricing section .list .yellow i {
+    color: rgb(212, 212, 0);
+}
+#pricing section .list .green i {
+    color: green;
+}
+#pricing section .list .special b {
+    background-color: rgba(222, 176, 255, 0.781);
+    display: inline-block;
+    border-radius: 100px;
+    padding: 5px 15px;
+}
+#pricing section .list .special i {
+    color: purple;
+}
+
+#pricing section .add {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 35px;
+    margin-top: auto;
+}
+
+#pricing section .add button {
+    background-color:rgb(63, 55, 170);
+    color: rgb(209, 243, 209);
+    font-size: 1.2rem;
+    width: 80%;
+    border:1px solid rgb(64, 64, 235);
+    border-radius: 100px;
+    padding: 10px;
+    margin-top: 10px;
+}
+#pricing section .add button:hover , #pricing section .add button:active {
+    background-color:rgb(11, 1, 151);
+}
+
+#pricing section .add b {
+    color: rgb(151, 150, 150);
+}
+
+#pricing #business {
+    transform:scale(1.05);
+    transition:all linear 0.5s;
+    box-shadow:0px 0px 20px 1px gray;
+    z-index: 0;
+}
+
+#pricing #business #popular {
+    background-color: crimson;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 0 0 10px 0px crimson;
+    color:wheat;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#pricing #business .taman .save span{
+    background-color: crimson;
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    padding: 10px;
+
+}
+
+#pricing #business .taman .save .ofr {
+    background-color: transparent;
+    color: rgb(122, 121, 121);
+    text-decoration: line-through;
+    display:inline-block;
+}
+
+#pricing #business .add button {
+    background-color: rgb(252, 78, 113);
+    border:1px solid rgb(252, 95, 126);
+    color: rgb(209, 243, 209);
+    font-size: 1.2rem;
+    width: 80%;
+    border-radius: 100px;
+    padding: 10px;
+    margin-top: 10px;
+}
+#pricing #business .add button:hover ,#pricing #business .add button:active {
+    background-color: crimson;
+}
+
+
+        /*----- end pricing -----*/
+
+
+
+
+            
+    
+            /*----- start domain name ----*/
+    
+    
+            #domain {
+                display: flex;
+                flex-direction:column;
+                align-items:center;
+                height:300px;
+                width: 100%;
+                margin-top: 70px;
+            }
+            
+            #domain div {
+                text-align: center;
+                width: 620px;
+            }
+            
+            #domain div h3 {
+                font-size: 2.2rem;
+                margin: 20px 0;
+            }
+            
+            #domain div p {
+                font-size: 1rem;
+                margin: 10px 0;
+            }
+            
+            #domain div form {
+                margin-top: 50px;
+            }
+            
+            #domain div form input {
+                height: 30px;
+                width: 400px;
+                font-size: 1.2rem;
+                border-radius:100px;
+                padding: 20px;
+                border: 1px solid gray;
+            }
+            
+            #domain div form button {
+                background-color:rgb(10, 1, 146);
+                color: rgb(198, 206, 250);
+                height:43px ;
+                width: 130px;
+                font-size: 1.15rem;
+                border-radius: 100px;
+                margin-left: -60px;
+            }
+            
+            
+                    /*----- end domain name -----*/
+            
+            
+    
+            
+    
+            /*----- start featurs -----*/
+    
+    
+    #featurs {
+        background-color: rgba(255, 255, 255, 0.836);
+        display: flex;
+        flex-direction:column;
+        margin: 70px 0;
+    }
+    
+    #featurs .fea1 {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 20px 20px;
+    }
+    
+    #featurs .fea1 div {
+        width: 500px;
+        margin: 0 auto;
+    }
+    
+    #featurs .fea1 div .fea-p {
+        font-size: 1.1rem;
+        color: rgb(134, 129, 129);
+    }
+    
+    #featurs .fea1 div h4 {
+        font-size: 1.9rem;
+        font-weight:bold;
+        margin: 20px 0;
+        color:rgb(0, 0, 138);
+    }
+    
+    #featurs .fea1 div p {
+        font-size: 1rem;
+        font-weight:bold;
+        color: rgb(90, 90, 90);
+    }
+    
+    #featurs .fea1 div a {
+        text-decoration:underline;
+        color: rgb(55, 55, 102);
+        display: inline-block;
+        margin: 20px 0;
+    
+    }
+    
+    #featurs .fea1 img {
+        width: 50%;
+    }
+    
+    
+    
+    
+            /*----- end featurs -----*/
+    
+    
+    
+            
+            /*----- start panel -----*/
+    
+    
+    #panel .sou-sou {
+        font-size:1.4rem
+    }
+    
+    #panel .sou-panel div img{
+        height: 90%;
+        width: 90%;
+        border-radius: 50px;
+        margin:0 0 40px 0;
+    }
+    
+    
+    
+    
+    #panel {
+        background-color: rgba(255, 255, 255, 0.623);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    
+    #panel header {
+        margin: 40px 0 50px;
+    }
+    
+    #panel header h3 {
+        font-size: 2.2rem;
+        color:rgb(3, 3, 139);
+    }
+    
+    #panel .sou-panel {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content:space-between ;
+    }
+    
+    #panel .sou-panel div img{
+        border-radius: 50px;
+        margin:0 0 40px 0;
+    }
+    
+    #panel .sou-panel .sou-sou {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    
+    #panel .sou-panel .sou-sou div {
+        margin-bottom: 30px;
+        width: 300px;
+        margin: 5px auto 20px;
+    }
+    
+    #panel .sou-panel .sou-sou i {
+        font-size: 2rem;
+        color:rgb(0, 0, 138);
+        margin: 15px 0;
+    }
+    
+    #panel .sou-panel .sou-sou h4 {
+        font-size: 1.3rem;
+        color:rgb(0, 0, 138);
+    }
+    
+    #panel .sou-panel .sou-sou p {
+        font-size: 1rem;
+    }
+    
+    
+            
+            /*----- end panel -----*/
+    
+
+
+            
+
+        /*----- start guarantee -----*/
+
+
+#guarantee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    text-align: center ;
+}
+
+#guarantee h3 {
+    margin: 10px;
+    font-size: 2.2rem;
+    color: rgb(0, 0, 94);
+}
+
+#guarantee p {
+    font-size: 1rem;
+    font-weight:bold;
+    color: rgb(0, 0, 94);
+    width: 540px;
+}
+
+#guarantee form {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+#guarantee form input[type="email"] {
+    text-align: center;
+    border:1px solid gray;
+    border-radius: 5px;
+    height: 40px;
+    width: 400px;
+    margin: 30px 0 10px;
+}
+
+#guarantee form input[type="submit"] {
+    background-color:rgb(56, 56, 184);
+    color:rgb(240, 234, 253);
+    text-align: center;
+    border:1px solid gray;
+    border-radius: 100px;
+    height: 50px;
+    width: 240px;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight:bold;
+    cursor: pointer;
+}
+#guarantee form input[type="submit"]:hover {
+    background-color:rgb(17, 17, 172);
+
+}
+
+
+        /*----- end guarantee -----*/
+
+
+
+    
+        }    
+
+
+
+
+
+
+
+
+
+
+        
+        @media (max-width:710px) {
+
+
+            /*----- start header -----*/
+    
+    .header {
+        padding:0px 15px;
+        background: #7ac8ec;
+    }
+    
+    .header nav {
+        position:absolute;
+        width:100%;
+        height:calc(100vh - 70px);
+        background: #7ac8ec;
+        top:70px;
+        left:100%;
+        transition:0.5s;
+    }
+    
+    .header .logo {
+        margin:0;
+    }
+    
+    .header .logo img {
+        height:60px ;
+        width:110px ;
+    }
+    
+    header nav.active {
+        left: 0;
+    }
+    
+    .header nav ul {
+        display: block;
+        text-align: center;
+    }
+    
+    .header nav ul li a {
+        border-bottom:1px solid rgba(0,0,0,.2);
+    }
+    
+    .menu-toggle {
+        display: block;
+        margin:8px 10px ;
+    }
+    
+            /*----- end header -----*/
+    
+    
+            
+            /*-----start main -----*/
+    
+    
+
+    
+    
+    
+main div {
+    width: 400px;
+}
+
+main div h1 {
+    font-size: 2.1rem;
+    color: rgb(230, 228, 228);
+}
+
+main div p {
+    font-size: 1.1rem;
+    color:rgb(221, 221, 221);
+}
+
+main div a {
+    min-height: 50px;
+    min-width: 190px;
+
+}
+    
+    
+    
+    
+            /*-----end main -----*/
+    
+
+
+            
+
+        
+
+        /*----- start pricing -----*/
+
+#pricing {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#pricing h2 {
+    align-self:center;
+    margin: 30px 0;
+    font-size: 2em;
+    color: rgb(0, 0, 114);
+}
+
+#pricing #id {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width: 100%;
+    justify-content: space-between;
+}
+#pricing #id #sou-id1  {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#pricing #id #sou-id2 {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 0px;
+}
+
+#pricing section {
+    width: 340px;
+    height: 699px;
+    background-color: rgb(245, 245, 245);
+    margin: 60px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow:0px 0px 10px 0px gray;
+}
+
+#pricing section:hover {
+    transform:scale(1.05);
+    transition:all linear 0.5s;
+    box-shadow:0px 0px 20px 1px gray;
+    z-index: 0;
+}
+
+#pricing section header {
+    text-align: center;
+    width: 100%;
+    height:80px;
+    padding: 29px 0;
+    text-align: center;
+}
+
+#pricing section header h4 {
+    font-size: 1.3rem;
+    color:rgb(31, 0, 172);
+}
+
+#pricing section header p {
+    font-size: 1.1rem;
+    padding: 10px 25px;
+    color:rgb(88, 51, 255);
+}
+
+#pricing section .taman {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pricing section .taman .save .ofr {
+    background-color: transparent;
+    color: rgb(122, 121, 121);
+    text-decoration: line-through;
+    display:inline-block;
+}
+
+#pricing section .taman .save span{
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    padding: 10px;
+}
+
+#pricing section .taman .pric {
+    color: rgb(8, 0, 124);
+    margin: 10px 0 0;
+    font-size: 3rem;
+    font-weight:bold;
+}
+
+#pricing section .taman .pric sub, #pricing section .taman .pric sup {
+    margin: 100px 0 0;
+    font-size: 1.5rem;
+}
+
+
+#pricing section .list {
+    line-height: 1.8rem;
+    margin: 30px 0px 10px 10px;
+}
+
+#pricing section .list li i {
+    font-size: 0.8rem;
+    margin-right: 3px;
+}
+
+#pricing section .list .yellow i {
+    color: rgb(212, 212, 0);
+}
+#pricing section .list .green i {
+    color: green;
+}
+#pricing section .list .special b {
+    background-color: rgba(222, 176, 255, 0.781);
+    display: inline-block;
+    border-radius: 100px;
+    padding: 5px 15px;
+}
+#pricing section .list .special i {
+    color: purple;
+}
+
+#pricing section .add {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 35px;
+    margin-top: auto;
+}
+
+#pricing section .add button {
+    background-color:rgb(63, 55, 170);
+    color: rgb(209, 243, 209);
+    font-size: 1.2rem;
+    width: 80%;
+    border:1px solid rgb(64, 64, 235);
+    border-radius: 100px;
+    padding: 10px;
+    margin-top: 10px;
+}
+#pricing section .add button:hover , #pricing section .add button:active {
+    background-color:rgb(11, 1, 151);
+}
+
+#pricing section .add b {
+    color: rgb(151, 150, 150);
+}
+
+#pricing #business {
+    transform:scale(1.05);
+    transition:all linear 0.5s;
+    box-shadow:0px 0px 20px 1px gray;
+    z-index: 0;
+}
+
+#pricing #business #popular {
+    background-color: crimson;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 0 0 10px 0px crimson;
+    color:wheat;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#pricing #business .taman .save span{
+    background-color: crimson;
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    padding: 10px;
+
+}
+
+#pricing #business .taman .save .ofr {
+    background-color: transparent;
+    color: rgb(122, 121, 121);
+    text-decoration: line-through;
+    display:inline-block;
+}
+
+#pricing #business .add button {
+    background-color: rgb(252, 78, 113);
+    border:1px solid rgb(252, 95, 126);
+    color: rgb(209, 243, 209);
+    font-size: 1.2rem;
+    width: 80%;
+    border-radius: 100px;
+    padding: 10px;
+    margin-top: 10px;
+}
+#pricing #business .add button:hover ,#pricing #business .add button:active {
+    background-color: crimson;
+}
+
+
+        /*----- end pricing -----*/
+
+
+
+
+            
+    
+            /*----- start domain name ----*/
+    
+    
+            #domain {
+                display: flex;
+                flex-direction:column;
+                align-items:center;
+                height:300px;
+                width: 100%;
+                margin-top: 70px;
+            }
+            
+            #domain div {
+                text-align: center;
+                width: 500px;
+            }
+            
+            #domain div h3 {
+                font-size: 2rem;
+                margin: 20px 0;
+            }
+            
+            #domain div p {
+                font-size: 1rem;
+                margin: 10px 0;
+            }
+            
+            #domain div form {
+                margin-top: 50px;
+            }
+            
+            #domain div form input {
+                height: 30px;
+                width: 400px;
+                font-size: 1.2rem;
+                border-radius:100px;
+                padding: 20px;
+                border: 1px solid gray;
+            }
+            
+            #domain div form button {
+                background-color:rgb(10, 1, 146);
+                color: rgb(198, 206, 250);
+                height:43px ;
+                width: 130px;
+                font-size: 1.15rem;
+                border-radius: 100px;
+                margin-left: -60px;
+            }
+            
+            
+                    /*----- end domain name -----*/
+            
+            
+    
+            
+    
+            /*----- start featurs -----*/
+    
+    
+    #featurs {
+        background-color: rgba(255, 255, 255, 0.836);
+        display: flex;
+        flex-direction:column;
+        margin: 70px 0;
+    }
+    
+    #featurs .fea1 {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 20px 20px;
+    }
+    
+    #featurs .fea1 div {
+        width: 500px;
+        margin: 0 auto;
+    }
+    
+    #featurs .fea1 div .fea-p {
+        font-size: 1.1rem;
+        color: rgb(134, 129, 129);
+    }
+    
+    #featurs .fea1 div h4 {
+        font-size: 1.5rem;
+        font-weight:bold;
+        margin: 20px 0;
+        color:rgb(0, 0, 138);
+    }
+    
+    #featurs .fea1 div p {
+        font-size: 1rem;
+        font-weight:bold;
+        color: rgb(90, 90, 90);
+    }
+    
+    #featurs .fea1 div a {
+        text-decoration:underline;
+        color: rgb(55, 55, 102);
+        display: inline-block;
+        margin: 20px 0;
+    
+    }
+    
+    #featurs .fea1 img {
+        width: 50%;
+    }
+    
+    
+    
+    
+            /*----- end featurs -----*/
+    
+    
+    
+            
+            /*----- start panel -----*/
+    
+    
+    #panel .sou-sou {
+        font-size:1.4rem
+    }
+    
+    #panel .sou-panel div img{
+        height: 75%;
+        width: 90%;
+        border-radius: 50px;
+        margin:0 0 40px 0;
+    }
+    
+    
+    
+    
+    #panel {
+        background-color: rgba(255, 255, 255, 0.623);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    
+    #panel header {
+        margin: 40px 0 50px;
+    }
+    
+    #panel header h3 {
+        font-size: 2rem;
+        color:rgb(3, 3, 139);
+    }
+    
+    #panel .sou-panel {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content:space-between ;
+    }
+    
+    #panel .sou-panel div img{
+        border-radius: 50px;
+        margin:0 0 40px 0;
+    }
+    
+    #panel .sou-panel .sou-sou {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 35%;
+        margin-top: -50px;
+    }
+    
+    #panel .sou-panel .sou-sou div {
+        margin-bottom: 30px;
+        width: 180px;
+        margin: 5px auto 20px;
+    }
+    
+    #panel .sou-panel .sou-sou i {
+        font-size: 1.5rem;
+        color:rgb(0, 0, 138);
+        margin: 15px 0;
+    }
+    
+    #panel .sou-panel .sou-sou h4 {
+        font-size: 1rem;
+        color:rgb(0, 0, 138);
+    }
+    
+    #panel .sou-panel .sou-sou p {
+        font-size: 0.8rem;
+    }
+    
+    
+            
+            /*----- end panel -----*/
+    
+
+
+            
+
+        /*----- start guarantee -----*/
+
+
+#guarantee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    text-align: center ;
+}
+
+#guarantee h3 {
+    margin: 10px;
+    font-size: 2.2rem;
+    color: rgb(0, 0, 94);
+}
+
+#guarantee p {
+    font-size: 1rem;
+    font-weight:bold;
+    color: rgb(0, 0, 94);
+    width: 500px;
+}
+
+#guarantee form {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+#guarantee form input[type="email"] {
+    text-align: center;
+    border:1px solid gray;
+    border-radius: 5px;
+    height: 40px;
+    width: 400px;
+    margin: 30px 0 10px;
+}
+
+#guarantee form input[type="submit"] {
+    background-color:rgb(56, 56, 184);
+    color:rgb(240, 234, 253);
+    text-align: center;
+    border:1px solid gray;
+    border-radius: 100px;
+    height: 50px;
+    width: 240px;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight:bold;
+    cursor: pointer;
+}
+#guarantee form input[type="submit"]:hover {
+    background-color:rgb(17, 17, 172);
+
+}
+
+
+
+
+        /*----- end guarantee -----*/
+
+
+
+        /*----- start video -----*/
+
+        
+        #works h2 {
+            font-size: 2.1rem;
+        }
+        
+        #works #video {
+            width: 70%;
+        }
+        
+        
+                /*----- end video -----*/
+
+
+    
+        }    
+
+
+
+
+
+
+        
+        
+        @media (max-width:610px) {
+
+
+            /*----- start header -----*/
+    
+    .header {
+        padding:0px 15px;
+        background: #7ac8ec;
+        width: 100vw;
+    }
+    
+    .header nav {
+        position:absolute;
+        width:100%;
+        height:calc(100vh - 65px);
+        background: #7ac8ec;
+        top:65px;
+        left:100%;
+        transition:0.5s;
+    }
+    
+    .header .logo {
+        margin:0;
+    }
+    
+    .header .logo img {
+        height:60px ;
+        width:110px ;
+    }
+    
+    header nav.active {
+        left: 0;
+    }
+    
+    .header nav ul {
+        display: block;
+        text-align: center;
+    }
+    
+    .header nav ul li a {
+        border-bottom:1px solid rgba(0,0,0,.2);
+    }
+    
+    .menu-toggle {
+        display: block;
+        margin:8px 10px ;
+    }
+    
+            /*----- end header -----*/
+    
+    
+            
+            /*-----start main -----*/
+    
+    
+
+    
+    
+    
+main div {
+    width: 400px;
+}
+
+main div h1 {
+    font-size: 2.1rem;
+    color: rgb(230, 228, 228);
+}
+
+main div p {
+    font-size: 1.1rem;
+    color:rgb(221, 221, 221);
+}
+
+main div a {
+    min-height: 50px;
+    min-width: 190px;
+
+}
+    
+    
+    
+    
+            /*-----end main -----*/
+    
+
+
+            
+
+        
+
+        /*----- start pricing -----*/
+
+#pricing {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#pricing h2 {
+    align-self:center;
+    margin: 30px 0;
+    font-size: 1.7em;
+    color: rgb(0, 0, 114);
+}
+
+#pricing #id {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width: 100%;
+    justify-content: space-between;
+}
+#pricing #id #sou-id1  {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#pricing #id #sou-id2 {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 0px;
+}
+
+#pricing section {
+    width: 300px;
+    height: 699px;
+    background-color: rgb(245, 245, 245);
+    margin: 60px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow:0px 0px 10px 0px gray;
+}
+
+#pricing section:hover {
+    transform:scale(1.05);
+    transition:all linear 0.5s;
+    box-shadow:0px 0px 20px 1px gray;
+    z-index: 0;
+}
+
+#pricing section header {
+    text-align: center;
+    width: 100%;
+    height:80px;
+    padding: 29px 0;
+    text-align: center;
+}
+
+#pricing section header h4 {
+    font-size: 1.3rem;
+    color:rgb(31, 0, 172);
+}
+
+#pricing section header p {
+    font-size: 1.1rem;
+    padding: 10px 25px;
+    color:rgb(88, 51, 255);
+}
+
+#pricing section .taman {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pricing section .taman .save .ofr {
+    background-color: transparent;
+    color: rgb(122, 121, 121);
+    text-decoration: line-through;
+    display:inline-block;
+}
+
+#pricing section .taman .save span{
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    padding: 10px;
+}
+
+#pricing section .taman .pric {
+    color: rgb(8, 0, 124);
+    margin: 10px 0 0;
+    font-size: 3rem;
+    font-weight:bold;
+}
+
+#pricing section .taman .pric sub, #pricing section .taman .pric sup {
+    margin: 100px 0 0;
+    font-size: 1.5rem;
+}
+
+
+#pricing section .list {
+    line-height: 1.8rem;
+    margin: 30px 0px 10px 10px;
+}
+
+#pricing section .list li i {
+    font-size: 0.8rem;
+    margin-right: 3px;
+}
+
+#pricing section .list .yellow i {
+    color: rgb(212, 212, 0);
+}
+#pricing section .list .green i {
+    color: green;
+}
+#pricing section .list .special b {
+    background-color: rgba(222, 176, 255, 0.781);
+    display: inline-block;
+    border-radius: 100px;
+    padding: 5px 15px;
+}
+#pricing section .list .special i {
+    color: purple;
+}
+
+#pricing section .add {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 35px;
+    margin-top: auto;
+}
+
+#pricing section .add button {
+    background-color:rgb(63, 55, 170);
+    color: rgb(209, 243, 209);
+    font-size: 1.2rem;
+    width: 80%;
+    border:1px solid rgb(64, 64, 235);
+    border-radius: 100px;
+    padding: 10px;
+    margin-top: 10px;
+}
+#pricing section .add button:hover , #pricing section .add button:active {
+    background-color:rgb(11, 1, 151);
+}
+
+#pricing section .add b {
+    color: rgb(151, 150, 150);
+}
+
+#pricing #business {
+    transform:scale(1.05);
+    transition:all linear 0.5s;
+    box-shadow:0px 0px 20px 1px gray;
+    z-index: 0;
+}
+
+#pricing #business #popular {
+    background-color: crimson;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 0 0 10px 0px crimson;
+    color:wheat;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#pricing #business .taman .save span{
+    background-color: crimson;
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    padding: 10px;
+
+}
+
+#pricing #business .taman .save .ofr {
+    background-color: transparent;
+    color: rgb(122, 121, 121);
+    text-decoration: line-through;
+    display:inline-block;
+}
+
+#pricing #business .add button {
+    background-color: rgb(252, 78, 113);
+    border:1px solid rgb(252, 95, 126);
+    color: rgb(209, 243, 209);
+    font-size: 1.2rem;
+    width: 80%;
+    border-radius: 100px;
+    padding: 10px;
+    margin-top: 10px;
+}
+#pricing #business .add button:hover ,#pricing #business .add button:active {
+    background-color: crimson;
+}
+
+
+        /*----- end pricing -----*/
+
+
+
+
+            
+    
+            /*----- start domain name ----*/
+    
+    
+            #domain {
+                display: flex;
+                flex-direction:column;
+                align-items:center;
+                height:300px;
+                width: 100%;
+                margin-top: 70px;
+            }
+            
+            #domain div {
+                text-align: center;
+                width: 370px;
+            }
+            
+            #domain div h3 {
+                font-size: 1.7rem;
+                margin: 20px 0;
+            }
+            
+            #domain div p {
+                font-size: 1rem;
+                margin: 10px 0;
+            }
+            
+            #domain div form {
+                margin-top: 50px;
+            }
+            
+            #domain div form input {
+                height: 30px;
+                width: 270px;
+                font-size: 0.8rem;
+                border-radius:100px;
+                padding: 20px;
+                border: 1px solid gray;
+            }
+            
+            #domain div form button {
+                background-color:rgb(10, 1, 146);
+                color: rgb(198, 206, 250);
+                height:42px ;
+                width: 100px;
+                font-size: 0.8rem;
+                border-radius: 100px;
+                margin-left: -60px;
+            }
+            
+            
+                    /*----- end domain name -----*/
+            
+            
+    
+            
+    
+            /*----- start featurs -----*/
+    
+    
+    #featurs {
+        background-color: rgba(255, 255, 255, 0.836);
+        display: flex;
+        flex-direction:column;
+        margin: 70px 0;
+    }
+    
+    #featurs .fea1 {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 20px 20px;
+    }
+    
+    #featurs .fea1 div {
+        width: 400px;
+        margin: 0 auto;
+    }
+    
+    #featurs .fea1 div .fea-p {
+        font-size: 0.9rem;
+        color: rgb(134, 129, 129);
+    }
+    
+    #featurs .fea1 div h4 {
+        font-size: 1.1rem;
+        font-weight:bold;
+        margin: 20px 0;
+        color:rgb(0, 0, 138);
+    }
+    
+    #featurs .fea1 div p {
+        font-size: 0.8rem;
+        font-weight:bold;
+        color: rgb(90, 90, 90);
+    }
+    
+    #featurs .fea1 div a {
+        text-decoration:underline;
+        color: rgb(55, 55, 102);
+        display: inline-block;
+        margin: 20px 0;
+    
+    }
+    
+    #featurs .fea1 img {
+        width: 50%;
+    }
+    
+    
+    
+    
+            /*----- end featurs -----*/
+    
+    
+    
+            
+            /*----- start panel -----*/
+    
+    
+    #panel .sou-sou {
+        font-size:1.4rem
+    }
+    
+    #panel .sou-panel div img{
+        height: 75%;
+        width: 90%;
+        border-radius: 50px;
+        margin:0 0 40px 0;
+    }
+    
+    
+    
+    
+    #panel {
+        background-color: rgba(255, 255, 255, 0.623);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    
+    #panel header {
+        margin: 40px 0 50px;
+    }
+    
+    #panel header h3 {
+        font-size: 2rem;
+        color:rgb(3, 3, 139);
+    }
+    
+    #panel .sou-panel {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content:space-between ;
+    }
+    
+    #panel .sou-panel div img{
+        border-radius: 50px;
+        margin:0 0 40px 0;
+    }
+    
+    #panel .sou-panel .sou-sou {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 35%;
+        margin-top: -50px;
+    }
+    
+    #panel .sou-panel .sou-sou div {
+        margin-bottom: 30px;
+        width: 180px;
+        margin: 5px auto 20px;
+    }
+    
+    #panel .sou-panel .sou-sou i {
+        font-size: 1.5rem;
+        color:rgb(0, 0, 138);
+        margin: 15px 0;
+    }
+    
+    #panel .sou-panel .sou-sou h4 {
+        font-size: 1rem;
+        color:rgb(0, 0, 138);
+    }
+    
+    #panel .sou-panel .sou-sou p {
+        font-size: 0.8rem;
+    }
+    
+    
+            
+            /*----- end panel -----*/
+    
+
+
+            
+
+        /*----- start guarantee -----*/
+
+
+#guarantee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    text-align: center ;
+}
+
+#guarantee h3 {
+    margin: 10px;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 94);
+}
+
+#guarantee p {
+    font-size: 1rem;
+    font-weight:bold;
+    color: rgb(0, 0, 94);
+    width: 340px;
+}
+
+#guarantee form {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+#guarantee form input[type="email"] {
+    text-align: center;
+    border:1px solid gray;
+    border-radius: 5px;
+    height: 40px;
+    width: 280px;
+    margin: 30px 0 10px;
+}
+
+#guarantee form input[type="submit"] {
+    background-color:rgb(56, 56, 184);
+    color:rgb(240, 234, 253);
+    text-align: center;
+    border:1px solid gray;
+    border-radius: 100px;
+    height: 42px;
+    width: 190px;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight:bold;
+    cursor: pointer;
+}
+#guarantee form input[type="submit"]:hover {
+    background-color:rgb(17, 17, 172);
+
+}
+
+
+
+
+        /*----- end guarantee -----*/
+
+
+
+        /*----- start video -----*/
+
+        
+        #works h2 {
+            font-size: 1.6rem;
+        }
+        
+        #works #video {
+            width: 70%;
+        }
+        
+        
+                /*----- end video -----*/
+
+
+    
+
+                
+        /*----- start footer -----*/
+
+
+        footer {
+            background-color: rgba(216, 216, 216, 0.486);
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            height: 1000px;
+            margin-top: 70px;
+        }
+        
+        footer .fo1 {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        
+        footer #sosofo {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        footer .fo1 p {
+            color: rgb(29, 19, 114);
+            font-size: 1.1rem;
+        }
+        
+        footer .fo1 .lo-fo {
+            display:flex;
+            flex-direction:row;
+            margin: 20px 40px
+        }
+        
+        footer .fo1 .lo-fo img {
+            height: 100%;
+            width: 17%;
+        }
+        
+        footer .fo1 .lo-fo p {
+            align-self: flex-end;
+            padding:0 5px;
+            font-weight: bold;
+            font-family: serif;
+            letter-spacing: 0.15rem;
+            font-size:1.3rem; 
+            color: rgb(255, 220, 21);
+        }
+        
+        footer .fo1 .pa-fo {
+            margin:0 40px;
+        }
+        
+        footer .fo1 .pa-fo p {
+            color: rgb(29, 19, 114);
+            font-size: 1.2rem;
+        }
+        
+        footer .fo1 .pa-fo p i {
+            color: rgb(29, 19, 114);
+            font-size: 1rem;
+            margin:0 8px;
+        }
+        
+        footer .fo1 .list1-fo1 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 20px 40px
+        }
+        
+        footer .fo1 .list1-fo1 a {
+            color: rgb(29, 19, 114);
+            font-size: 1.9rem;
+            padding: 10px;
+        }
+        
+        footer .fo1 .list2-fo1 {
+            margin: 10px 40px;
+            display:flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+        }
+        
+        footer .fo1 .list2-fo1 img {
+            margin: 2px;
+        }
+        
+        footer .fo1 .list2-fo1 a {
+            text-decoration:underline;
+            align-self: center;
+            margin: 5px;
+        }
+        
+        
+        footer hr {
+            margin:0 5px;
+        }
+        
+        
+        footer #sosofo  .fo2 {
+            width: 25%;
+            margin: 0 20px;
+        }
+        
+        footer #sosofo  .fo2 .list1-fo2 form {
+            display: flex;
+            flex-direction:column;
+        }
+        
+        footer #sosofo  .fo2 .list1-fo2 header {
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            font-size: 1.3rem;
+            width:100% ;
+            margin:20px 0;
+        }
+        
+        footer #sosofo  .fo2 .list1-fo2 header h3{
+            color: rgb(29, 19, 114);
+            font-size: 1.2rem;
+        }
+        
+        footer #sosofo  .fo2 .list1-fo2 form input {
+            margin: 10px 10px;
+            height:30px ;
+            width:70% ;
+            padding: 3px;
+            border:1px solid gray;
+            border-radius: 5px;
+            font-size: 0.5rem;
+        }
+        footer #sosofo  .fo2 .list1-fo2 form textarea {
+            margin: 0 10px;
+            height:90px ;
+            width:80% ;
+            padding: 10px;
+            border:1px solid gray;
+            border-radius: 5px;
+            font-size: 0.7rem;
+        }
+        
+        footer #sosofo  .fo2 .list1-fo2 form #submit {
+            margin: 10px 30px;
+            height:30px ;
+            width:60% ;
+            padding: 3px;
+            border:1px solid gray;
+            border-radius: 8px;
+            align-self: center;
+            font-weight: bold;
+            background-color: rgb(25, 25, 190);
+            color:rgb(233, 230, 225);
+            cursor: pointer;
+        }
+        
+        
+        
+        footer #sosofo  .fo3 {
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+            width: 650px;
+        }
+        
+        footer #sosofo  .fo3 .sou-li1 {
+            margin: 15px 5px;
+        }
+        
+        footer #sosofo  .fo3 .sou-li1 h5 {
+            color: rgb(4, 4, 133);
+            font-size: 1rem;
+            margin: 10px 0px;
+        }
+        footer #sosofo  .fo3 .sou-li1 ul {
+            line-height: 1.7rem;
+            color: rgb(66, 80, 107);
+            font-size: 0.8rem;
+        }
+        
+        
+        footer #sosofo  .fo3 .sou-li2 {
+            margin: 15px 5px;
+        }
+        
+        footer #sosofo  .fo3 .sou-li2 h5 {
+            color: rgb(4, 4, 133);
+            font-size: 1rem;
+            margin: 10px 0px;
+        }
+        footer #sosofo  .fo3 .sou-li2 ul {
+            line-height: 1.7rem;
+            color: rgb(66, 80, 107);
+            font-size: 0.8rem;
+        }
+        
+        
+        footer #sosofo  .fo3 .sou-li3 {
+            margin: 15px 5px;
+            display: none;
+        }
+        
+        footer #sosofo  .fo3 .sou-li3 h5 {
+            color: rgb(4, 4, 133);
+            font-size: 1rem;
+            margin: 10px 0px;
+        }
+        footer #sosofo  .fo3 .sou-li3 ul {
+            line-height: 1.7rem;
+            color: rgb(66, 80, 107);
+            font-size: 0.8rem;
+        }
+        
+        
+                /*----- end footer -----*/
+        
+
+                
+
+
+        }    
