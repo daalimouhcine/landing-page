@@ -22,7 +22,7 @@ body {
 
         /*----- start header -----*/
 
-.header {
+#header {
     position: fixed;
     top:0;
     left:0;
@@ -33,7 +33,7 @@ body {
     z-index: 7;
 }
 
-.header .logo {
+#header .logo {
     height: 50px;
     line-height: 50px;
     float:left;
@@ -41,12 +41,12 @@ body {
     margin: 0 -70px;
 }
 
-.header .logo img {
+#header .logo img {
     width: 150px;
     height: 70px;
 }
 
-.header .logo b {
+#header .logo b {
     font-family: serif;
     font-weight: bold;
     letter-spacing:0.3rem;
@@ -54,20 +54,20 @@ body {
 
 }
 
-.header nav {
+#header nav {
     float:right;
 }
-.header nav ul {
+#header nav ul {
     margin:0;
     padding:10px 0;
     display:flex;
 }
 
-.header nav ul li {
+#header nav ul li {
     list-style-type: none;
 }
 
-.header nav ul li a {
+#header nav ul li a {
     height:50px;
     line-height:50px;
     padding:0 20px;
@@ -77,12 +77,12 @@ body {
     font-weight: bold;
 }
 
-.header nav ul li a i {
+#header nav ul li a i {
 
     padding:0 10px;
 
 }
-.header nav ul li a:hover ,.header nav ul li a:active {
+#header nav ul li a:hover ,.header nav ul li a:active {
     color:#fff ;
     background-color:#2196f3;
 }
@@ -1105,12 +1105,12 @@ footer .fo3 .sou-li3 ul {
 
         /*----- start header -----*/
 
-.header {
+#header {
     padding:0px 15px;
     background: #7ac8ec;
 }
 
-.header nav {
+#header nav {
     position:absolute;
     width:100%;
     height:calc(100vh - 70px);
@@ -1120,25 +1120,25 @@ footer .fo3 .sou-li3 ul {
     transition:0.5s;
 }
 
-.header .logo {
+#header .logo {
     margin:0;
 }
 
-.header .logo img {
+#header .logo img {
     height:60px ;
     width:110px ;
 }
 
-header nav.active {
+#header nav.active {
     left: 0;
 }
 
-.header nav ul {
+#header nav ul {
     display: block;
     text-align: center;
 }
 
-.header nav ul li a {
+#header nav ul li a {
     border-bottom:1px solid rgba(0,0,0,.2);
 }
 
@@ -1598,12 +1598,12 @@ footer #sosofo  .fo3 .sou-li3 ul {
 
             /*----- start header -----*/
     
-    .header {
+    #header {
         padding:0px 15px;
         background: #7ac8ec;
     }
     
-    .header nav {
+    #header nav {
         position:absolute;
         width:100%;
         height:calc(100vh - 70px);
@@ -1613,29 +1613,29 @@ footer #sosofo  .fo3 .sou-li3 ul {
         transition:0.5s;
     }
     
-    .header .logo {
+    #header .logo {
         margin:0;
     }
     
-    .header .logo img {
+    #header .logo img {
         height:60px ;
         width:110px ;
     }
     
-    header nav.active {
+    #header nav.active {
         left: 0;
     }
     
-    .header nav ul {
+    #header nav ul {
         display: block;
         text-align: center;
     }
     
-    .header nav ul li a {
+    #header nav ul li a {
         border-bottom:1px solid rgba(0,0,0,.2);
     }
     
-    .menu-toggle {
+    #menu-toggle {
         display: block;
         margin:10px;
     }
@@ -2167,12 +2167,12 @@ footer #sosofo  .fo3 .sou-li3 ul {
 
             /*----- start header -----*/
     
-    .header {
+    #header {
         padding:0px 15px;
         background: #7ac8ec;
     }
     
-    .header nav {
+    #header nav {
         position:absolute;
         width:100%;
         height:calc(100vh - 70px);
@@ -2182,25 +2182,25 @@ footer #sosofo  .fo3 .sou-li3 ul {
         transition:0.5s;
     }
     
-    .header .logo {
+    #header .logo {
         margin:0;
     }
     
-    .header .logo img {
+    #header .logo img {
         height:60px ;
         width:110px ;
     }
     
-    header nav.active {
+    #header nav.active {
         left: 0;
     }
     
-    .header nav ul {
+    #header nav ul {
         display: block;
         text-align: center;
     }
     
-    .header nav ul li a {
+    #header nav ul li a {
         border-bottom:1px solid rgba(0,0,0,.2);
     }
     
@@ -2763,13 +2763,13 @@ main div a {
 
             /*----- start header -----*/
     
-    .header {
+    #header {
         padding:0px 15px;
         background: #7ac8ec;
         width: 100vw;
     }
     
-    .header nav {
+    #header nav {
         position:absolute;
         width:100%;
         height:calc(100vh - 65px);
@@ -2779,29 +2779,29 @@ main div a {
         transition:0.5s;
     }
     
-    .header .logo {
+    #header .logo {
         margin:0;
     }
     
-    .header .logo img {
+    #header .logo img {
         height:60px ;
         width:110px ;
     }
     
-    header nav.active {
+    #header nav.active {
         left: 0;
     }
     
-    .header nav ul {
+    #header nav ul {
         display: block;
         text-align: center;
     }
     
-    .header nav ul li a {
+    #header nav ul li a {
         border-bottom:1px solid rgba(0,0,0,.2);
     }
     
-    .menu-toggle {
+    #menu-toggle {
         display: block;
         margin:8px 10px ;
     }
